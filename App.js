@@ -1,7 +1,12 @@
-import React from 'react';
+import React from "react";
 
-import Providers from './navigation';
+import Providers from "./navigation";
+import { Provider as PaperProvider } from "react-native-paper";
 
 export default function App() {
-  return <Providers />;
+  return (
+    <PaperProvider>
+      <Providers />
+    </PaperProvider>
+  );
 }
